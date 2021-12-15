@@ -1,0 +1,31 @@
+rutas relativas y absolutas
+ls	- 	listar directorios y archivos
+pwd	-	muestra ruta de carpeta en la que estamos
+cd	-	cambia de directorio
+cd ..	-	nos sube un nivel en el arbol de archivos
+
+manipulacion de carpetas y archivos
+
+mkdir	-	crear una carpeta nueva
+rmdir	-	borrar una carpeta vacia no borra carpetas con archivos internos
+touch	-	sirve para crear un archivo
+rm	-	sirve para borrar archivos
+rm -R	-	borra archivos y carpetas, que esten dentro de las mismas
+
+cat	-	sirve para leer un archivo
+more	-	sirve para leer contenido de un archivo de texto plano
+man	-	nos da la documentacion de un comando si es que la tiene
+
+mv	-	comando que sirve para mover archivos y carpetas aun si contienen archivos
+cp	-	comando que sirve para copiar archivos
+cp -R	-	copia carpeta y archivos
+
+chmod -	comando que sirve para dar permisos de lectura, ejecucion y escritura.
+chown	-	comando que sirve para cambiar nombre de usuario propietario o grupo.
+sudo su	-	convertirse en super usuario
+
+kill	-	sirve para matar un proceso o varios
+kill id (con un solo id)
+killall "nombreproceso" (con varios ids o subproceso)
+kill -Stop id (detenemos un proceso)
+kill -Cont id (procedemos con el proceso)
