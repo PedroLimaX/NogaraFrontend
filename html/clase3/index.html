@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <title>Clase3</title>
+
+
+  <style>
+    tr,td,th{
+      border:1px dashed rebeccapurple;
+    }
+    table{
+      border: 1px solid slateblue;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Listas y tablas</h1>
+  <h2>Listas</h2>
+  <ol> <!--Order list-->
+    <li><strong>Perro</strong></li> <!--List item-->
+    <li><em>Gato</em></li>
+    <li>Raton</li>
+
+  </ol>
+
+  <ul> <!--ul>li*5>lorem3-->
+    <li>Lorem, ipsum dolor.</li>
+    <li>Eligendi, harum fugiat?</li>
+    <li>Expedita, labore optio.</li>
+    <li>Optio, ab soluta.</li>
+    <li>Architecto, eos quos.</li>
+  </ul> <!--Unorder list-->
+  
+  
+  <ol>   <!-- ol>li*3>lorem3>ol>li*2>lorem3>ul>li*2>lorem3 -->
+  <li>
+      Lorem, ipsum dolor.<ol>
+        <li>
+          Lorem, ipsum dolor.<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Illum, facilis quo.</li>
+          </ul>
+        </li>
+        <li>
+          Voluptatibus, officiis quas!<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Quod, magni ut.</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>
+      Tempora, voluptas sequi.<ol>
+        <li>
+          Lorem, ipsum dolor.<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Eaque, alias placeat.</li>
+          </ul>
+        </li>
+        <li>
+          Iusto, autem molestiae!<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Corporis, facere aperiam.</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>
+      A, autem facilis.<ol>
+        <li>
+          Lorem, ipsum dolor.<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Magni, laborum velit.</li>
+          </ul>
+        </li>
+        <li>
+          Quasi, quidem fuga.<ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Obcaecati, debitis laboriosam.</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+
+  <hr>
+
+  <h2>Tablas</h2>
+
+  <table>
+    <tr>
+      <td>Perro</td>
+      <td>Gato</td>
+      <td>Vaca</td>
+    </tr>
+    <tr>
+      <td>Lorem.</td>
+      <td>Doloribus.</td>
+      <td>Nesciunt.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Lorem.</td>
+    </tr>
+    <tr>
+      <td>lorem</td>
+      <td rowspan="3">lorem2</td>
+      <td rowspan="2">lorem3</td>
+    </tr>
+    <tr>
+      <td>gato</td>
+    </tr>
+  </table>
+  
+  <hr>
+  
+  <table>
+    <tr>
+      <td rowspan="4">lorem 1</td>
+      <td>lorem2</td>
+      <td colspan="2" rowspan="2">lorem3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">lorem<br>4</td>
+    </tr>
+    <tr>
+      <td rowspan="3">lorem 6</td>
+      <td rowspan="2">lorem 7</td>
+    </tr>
+    <tr>
+      <td>lorem 8</td>
+    </tr>
+    <tr>
+      <td colspan="2">lorem 11</td>
+    </tr>
+  </table>
+
+  <hr>
+  <table>
+    <!--thead, tbody and tfoot ordena automaticamente el contenido sin importar como se ordena aqui-->
+    <tbody>
+      <tr>
+        <td>Cuerpo</td>
+        <td>Cuerpo</td>
+        <td>Cuerpo</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Footer</td>
+        <td>Footer</td>
+        <td>Footer</td>
+      </tr>
+    </tfoot>
+    
+    <thead>
+      <tr>
+        <th>Header</th>
+        <td>Header</td>
+        <td>Header</td>
+      </tr>
+    </thead>
+  </table>
+
+</body>
+</html>
