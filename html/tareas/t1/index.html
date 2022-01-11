@@ -9,23 +9,52 @@
   <title>About me</title>
 </head>
 
-<body
-  style="background-color: rgb(237, 237, 237); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
+<style>
+  body {
+    background-color: rgb(237, 237, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: rgb(0, 87, 164);
+    text-align: center;
+  }
+
+  button {
+    color: rgb(0, 87, 164);
+  }
+
+  section,
+  main,
+  a {
+    color: rgb(63, 63, 63);
+  }
+
+  footer,
+  form {
+    color: rgb(63, 63, 63);
+    text-align: center;
+  }
+</style>
+
+<body>
   <header>
-    <h1 style="color: rgb(218, 0, 55); text-align: center;">Darker X | Pedro Lima</h1>
+    <h1>Darker X | Pedro Lima</h1>
   </header>
   <nav>
     <ul>
       <li>
         <a href="juegos.html">
-          <button style="color: rgb(218, 0, 55);">
+          <button>
             <strong>Top de juegos</strong>
           </button>
         </a>
       </li>
       <li>
         <a href="canciones.html">
-          <button style="color: rgb(218, 0, 55);">
+          <button>
             <strong>Top de canciones</strong>
           </button>
         </a>
@@ -34,36 +63,37 @@
   </nav>
   <section id="content">
     <ol>
-      <li><a href="#data" style="color: rgb(63, 63, 63);">Acerca de mi</a></li>
-      <li><a href="#biography" style="color: rgb(63, 63, 63);">Biograf&iacute;a</a></li>
-      <li><a href="#funfacts" style="color: rgb(63, 63, 63);">Datos Curiosos</a></li>
+      <li><a href="#data">Acerca de mi</a></li>
+      <li><a href="#biography">Biograf&iacute;a</a></li>
+      <li><a href="#funfacts">Datos Curiosos</a></li>
+      <li><a href="#contact">Contacto</a></li>
     </ol>
   </section>
-  <section id="data" style="color: rgb(63, 63, 63);">
-    <h2 style="color: rgb(218, 0, 55);">Acerca de mi</h2>
-    <span>
-      <img src="img/profile.jpg" width="25%" alt="Profile Picture">
-      <img src="img/avatar.png" width="25%" alt="Avatar Picture">
-    </span>
+  <main id="data">
+    <h2>Acerca de mi</h2>
+    <figure>
+      <img src="img/profile.jpg" width="45%" alt="Profile Picture">
+      <img src="img/avatar.png" width="45%" alt="Avatar Picture">
+    </figure>
     <p><strong>Nombre:</strong> Pedro Degante Lima</p>
     <p><strong>Edad:</strong> 20 a&ntilde;os</p>
     <p><strong>Pais:</strong> Mexico</p>
     <p><strong>Estado civil:</strong> Viudo por 3ra vez</p>
     <p><strong>Hobbies:</strong>
     <ul>
-      <li>Escuchar musica</li>
-      <li>Jugar Videojuegos</li>
-      <li>Hacer chismes de la gente</li>
+      <li>Escuchar musica.</li>
+      <li>Jugar Videojuegos.</li>
+      <li>Hacer chismes de la gente.</li>
     </ul>
     </p>
-  </section>
-  <section id="biography" style="color: rgb(63, 63, 63);">
-    <h3 style="color: rgb(218, 0, 55);">Biograf&iacute;a</h3>
+  </main>
+  <section id="biography">
+    <h3>Biograf&iacute;a</h3>
     <p>
       Soy un estudiante de Ingenieria en Sistemas y TI, actualmente estoy cursando el 6to semestre de la carrera en la
       <span style="color: rgb(0, 181, 226);"><strong>BUAP</strong></span>, estudi&eacute; la preparatoria en el
       <span style="color: #9D2449;"><strong>CBTis 061</strong></span> de Huamantla, Tlaxcala en la especialidad de
-      Programaci&oacute;n, tengo conocimientos b&aacute;sicos en lenguages
+      Programaci&oacute;n, tengo conocimientos b&aacute;sicos en lenguajes
       de programacion como:
     <ul>
       <li><img src="img/c-icon.png" alt="Language C Icon" width="35"> C</li>
@@ -78,21 +108,22 @@
     Actualmente estudio en una academia llamada <span style="color: #269E7D;"><strong>Nogara DevCode</strong></span> en
     la cual estoy aprendiendo a desarrollar aplicaciones web frontend, ademas de pertenecer al programa de Student
     Ambassador en donde pienso reforzar y aprender mas sobre el desarrollo web y adquirir nuevas habilidades blandas que
-    me ayuden al comenzar en la vida laboral
+    me ayuden al comenzar en la vida laboral.
     </p>
   </section>
-  <section id="funfacts" style="color: rgb(63, 63, 63);">
-    <h3 style="color: rgb(218, 0, 55);">Datos curiosos</h3>
+  <section id="funfacts">
+    <h3>Datos curiosos</h3>
     <ul>
-      <li>Soy una persona muy cerrada pero cuando tomo confianza me beso con todos juas juas</li>
-      <li>Tengo un problema para organizar mis tiempos</li>
-      <li>Me gusta jugar videojuegos, tengo +2000hrs en Ark</li>
-      <li>Puedo comportarme de forma diferente dependiendo de las personas con las que conviva</li>
-      <li>Mis generos musicales favoritos son Metal/Rock y HardStyle/Psytrance</li>
+      <li>Soy una persona muy cerrada pero cuando tomo confianza me beso con todos juas juas.</li>
+      <li>Tengo un problema para organizar mis tiempos.</li>
+      <li>Me gusta jugar videojuegos, tengo +2000hrs en Ark.</li>
+      <li>Puedo comportarme de forma diferente dependiendo de las personas con las que conviva.</li>
+      <li>Mis generos musicales favoritos son Metal/Rock y HardStyle/Psytrance.</li>
     </ul>
   </section>
-  <section id="contact" style="color: rgb(63, 63, 63); border: 1px solid rgb(200, 200, 200); text-align: center;">
-    <h2 style="color: rgb(218, 0, 55);">Contacto</h2>
+  <hr>
+  <section id="contact">
+    <h2>Contacto</h2>
     <form>
       <input type="text" name="name" id="name" placeholder="Nombre"><br><br>
       <input type="text" name="lastname" id="lastname" placeholder="Apellido"><br><br>
@@ -103,16 +134,20 @@
 
   <hr>
 
-  <footer style="color: rgb(63, 63, 63); text-align: center;">
+  <footer>
     <ul>
-      <li><a href="https://www.facebook.com/pleidmrao" target="_blank"><img src="img/fb-icon.png" alt="facebook-icon" width="32"></a>
+      <li><a href="https://www.facebook.com/pleidmrao" target="_blank"><img src="img/fb-icon.png" alt="facebook-icon"
+            width="32"></a>
       </li>
-      <li><a href="https://www.instagram.com/pleidmrao/" target="_blank"><img src="img/ig-icon.png" alt="instagram-icon" width="32"></a>
+      <li><a href="https://www.instagram.com/pleidmrao/" target="_blank"><img src="img/ig-icon.png" alt="instagram-icon"
+            width="32"></a>
       </li>
-      <li><a href="https://twitter.com/PLeidmrao" target="_blank"><img src="img/tw-icon.png" alt="twitter-icon" width="32"></a></li>
-      <li><a href="https://www.tiktok.com/@darker_x?lang=es" target="_blank"><img src="img/tt-icon.png" alt="tiktok-icon"
+      <li><a href="https://twitter.com/PLeidmrao" target="_blank"><img src="img/tw-icon.png" alt="twitter-icon"
             width="32"></a></li>
-      <li><a href="https://github.com/PedroLimaX" target="_blank"><img src="img/gh-icon.png" alt="github-icon" width="32"></a></li>
+      <li><a href="https://www.tiktok.com/@darker_x?lang=es" target="_blank"><img src="img/tt-icon.png"
+            alt="tiktok-icon" width="32"></a></li>
+      <li><a href="https://github.com/PedroLimaX" target="_blank"><img src="img/gh-icon.png" alt="github-icon"
+            width="32"></a></li>
     </ul>
     <p>Todos los derechos reservados | Copyright 2022® | Darker X</p>
   </footer>
