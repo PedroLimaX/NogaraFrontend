@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,61 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>Clase 6</title>
 </head>
+
 <body>
 
-  <label for="terminos">Terminos</label>
-  <input type="checkbox" name="terminos" id="terminos">
-  <label for="info">Info</label>
-  <input type="checkbox" name="info" id="info">
+  <fieldset>
+    <legend>Checks</legend>
+    <label for="terminos">Terminos</label>
+    <input type="checkbox" name="terminos" id="terminos">
+    <label for="info">Info</label>
+    <input type="checkbox" name="info" id="info">
+  </fieldset>
+  <br>
+  <fieldset>
+    <label for="snk">SNK</label>
+    <input type="radio" name="anime" id="snk">
+    <label for="snk">kimetsu</label>
+    <input type="radio" name="anime" id="kimetsu">
+    <label for="snk">dgb</label>
+    <input type="radio" name="anime" id="dgb" checked>
+  </fieldset>
 
-  <hr>
-  <label for="snk">SNK</label>
-  <input type="radio" name="anime" id="snk">
-  
-  <label for="snk">kimetsu</label>
-  <input type="radio" name="anime" id="kimetsu">
-  
-  <label for="snk">dgb</label>
-  <input type="radio" name="anime" id="dgb">
+  <br><br>
+  <input type="date" name="date" id="date">
+  <input type="datetime-local" name="" id="datetime">
+  <br><br>
+  <input type="color" name="color" id="color">
+  <input type="file" name="file" id="file">
+  <br><br>
+  <input type="month" name="month" id="month">
+  <input type="week" name="week" id="week">
+  <input type="range" name="range" id="range">
+  <br><br>
+  <input type="search" name="search" id="search">
+  <br><br>
+  <input type="time" name="time" id="time">
+  <br><br>
+
+  <label for="animes">Animes</label>
+  <select name="" id="">
+    <option value="kimetsu">Kimetsu</option>
+    <option value="DGB">Dragon Ball</option>
+    <option value="SNK">Tatakae</option>
+  </select>
+  <br><br>
+
+  <input list="dias">
+  <datalist id="dias">
+    <option value="Lunes"></option>
+    <option value="Martes"></option>
+    <option value="Miercoles"></option>
+    <option value="Jueves"></option>
+    <option value="Viernes"></option>
+  </datalist>
+
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Reset">
 </body>
+
 </html>
