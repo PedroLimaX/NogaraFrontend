@@ -7,46 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <title>About me</title>
+  <title>Acerca de mi</title>
 </head>
 
 <body>
   <header>
     <h1>Darker X | Pedro Lima</h1>
+    <figure>
+      <!-- <img src="img/profile.jpg" width="45%" alt="Profile Picture"> -->
+      <img src="img/avatar.png" alt="Avatar Picture" id="avatarPic">
+    </figure>
     <nav>
       <ul>
-        <li>
-          <a href="juegos.html">
-            <button>
-              <strong>Top de juegos</strong>
-            </button>
-          </a>
-        </li>
-        <li>
-          <a href="canciones.html">
-            <button>
-              <strong>Top de canciones</strong>
-            </button>
-          </a>
-        </li>
+        <li><a href="records.html">Historial</a></li>
+        <li><a href="contact.html">Contactame</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="content">
-      <ol>
-        <li><a href="#data">Acerca de mi</a></li>
+      <ul>
+        <li><a href="#data">Datos Generales</a></li>
         <li><a href="#biography">Biograf&iacute;a</a></li>
         <li><a href="#funfacts">Datos Curiosos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ol>
+      </ul>
     </section>
     <section id="data">
-      <h2>Acerca de mi</h2>
-      <figure>
-        <img src="img/profile.jpg" width="45%" alt="Profile Picture">
-        <img src="img/avatar.png" width="45%" alt="Avatar Picture">
-      </figure>
+      <h2>Datos Generales</h2>
+
       <p><strong>Nombre:</strong> Pedro Degante Lima</p>
       <p><strong>Edad:</strong> 20 a&ntilde;os</p>
       <p><strong>Pais:</strong> Mexico</p>
@@ -68,14 +56,14 @@
         Programaci&oacute;n, tengo conocimientos b&aacute;sicos en lenguajes
         de programacion como:
       <ul>
-        <li><img src="img/c-icon.png" alt="Language C Icon" width="35"> C</li>
-        <li><img src="img/c-plus-plus-icon.png" alt="Language C++ Icon" width="35"> C++</li>
-        <li><img src="img/c-sharp-icon.png" alt="Language C# Icon" width="35"> C#</li>
-        <li><img src="img/java-icon.png" alt="Language Java Icon" width="35"> Java</li>
-        <li><img src="img/sql-icon.png" alt="Language SQL Icon" width="35"> SQL</li>
-        <li><img src="img/html-icon.png" alt="Language HTML Icon" width="35"> HTML xd</li>
-        <li><img src="img/css-icon.png" alt="Language CSS Icon" width="35"> CSS</li>
-        <li><img src="img/php-icon.png" alt="Language PHP Icon" width="35"> PHP</li>
+        <li><img src="img/c-icon.png" alt="Language C Icon"></li>
+        <li><img src="img/c-plus-plus-icon.png" alt="Language C++ Icon"></li>
+        <li><img src="img/c-sharp-icon.png" alt="Language C# Icon"></li>
+        <li><img src="img/java-icon.png" alt="Language Java Icon"></li>
+        <li><img src="img/sql-icon.png" alt="Language SQL Icon"></li>
+        <li><img src="img/html-icon.png" alt="Language HTML Icon"></li>
+        <li><img src="img/css-icon.png" alt="Language CSS Icon"></li>
+        <li><img src="img/php-icon.png" alt="Language PHP Icon"></li>
       </ul>
       Actualmente estudio en una academia llamada <span style="color: #269E7D;"><strong>Nogara DevCode</strong></span>
       en
@@ -83,6 +71,9 @@
       Ambassador en donde pienso reforzar y aprender mas sobre el desarrollo web y adquirir nuevas habilidades blandas
       que
       me ayuden al comenzar en la vida laboral.
+      <figure>
+        <img src="img/nogara.png" alt="Nogara DevCode">
+      </figure>
       </p>
     </section>
     <section id="funfacts">
@@ -95,34 +86,21 @@
         <li>Mis generos musicales favoritos son Metal/Rock y HardStyle/Psytrance.</li>
       </ul>
     </section>
-    <hr>
-    <section id="contact">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" name="name" id="name" placeholder="Nombre"><br><br>
-        <input type="text" name="lastname" id="lastname" placeholder="Apellido"><br><br>
-        <input type="email" name="email" id="email" placeholder="Correo"><br><br>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
   </main>
   <hr>
   <footer>
     <ul>
-      <li><a href="https://www.facebook.com/pleidmrao" target="_blank"><img src="img/fb-icon.png" alt="facebook-icon"
-            width="32"></a>
+      <li><a href="https://www.facebook.com/pleidmrao" target="_blank"><img class="footerIcon" src="img/fb-icon.png" alt="facebook-icon"></a>
       </li>
-      <li><a href="https://www.instagram.com/pleidmrao/" target="_blank"><img src="img/ig-icon.png" alt="instagram-icon"
-            width="32"></a>
+      <li><a href="https://www.instagram.com/pleidmrao/" target="_blank"><img class="footerIcon" src="img/ig-icon.png" alt="instagram-icon"></a>
       </li>
-      <li><a href="https://twitter.com/PLeidmrao" target="_blank"><img src="img/tw-icon.png" alt="twitter-icon"
-            width="32"></a></li>
-      <li><a href="https://www.tiktok.com/@darker_x?lang=es" target="_blank"><img src="img/tt-icon.png"
-            alt="tiktok-icon" width="32"></a></li>
-      <li><a href="https://github.com/PedroLimaX" target="_blank"><img src="img/gh-icon.png" alt="github-icon"
-            width="32"></a></li>
+      <li><a href="https://twitter.com/PLeidmrao" target="_blank"><img class="footerIcon" src="img/tw-icon.png" alt="twitter-icon"></a>
+      </li>
+      <li><a href="https://www.tiktok.com/@darker_x?lang=es" target="_blank"><img class="footerIcon" src="img/tt-icon.png" alt="tiktok-icon"></a></li>
+      <li><a href="https://github.com/PedroLimaX" target="_blank"><img class="footerIcon" src="img/gh-icon.png" alt="github-icon"></a></li>
     </ul>
-    <p>Todos los derechos reservados | Copyright 2022® | Darker X</p>
+    <br>
+    <p>Todos los derechos reservados | Copyright 2022 © | Darker X</p>
   </footer>
 </body>
 

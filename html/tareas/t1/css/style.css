@@ -1,25 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 body {
-  background-color: rgb(237, 237, 237);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(1, 1, 1);
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(128, 128, 128);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 192, 192);
+}
+
+h1 {
+  text-shadow: 0 0 15px rgb(0, 0, 255);
 }
 
 h1,
 h2,
 h3 {
-  color: rgb(0, 87, 164);
+  color: rgb(224, 224, 224);
   text-align: center;
 }
 
-button {
-  color: rgb(0, 87, 164);
+/* Navegation Bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:hover {
+  box-shadow: 0 0 2px rgb(0, 0, 224);
+}
+
+nav ul li a {
+  display: block;
+  margin: auto;
+  color: rgb(160, 160, 160);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Content Menu */
+#content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#content ul li {
+  display: inline-block;
+}
+
+#content ul li:hover {
+  box-shadow: 0 0 2px rgb(0, 0, 224);
+}
+
+#content ul li a {
+  display: block;
+  margin: auto;
+  color: rgb(160, 160, 160);
+  padding: 10px;
+  text-decoration: none;
+}
+
+#content ul li a:hover {
+  color: white
+}
+
+main figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Main Picture */
+#avatarPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Containers */
+header,
+main,
 section,
-a {
-  color: rgb(63, 63, 63);
+footer {
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+  padding: 20px;
 }
 
-footer {
-  color: rgb(63, 63, 63);
+/* Biography Section */
+#biography ul {
+  list-style-type: none;
   text-align: center;
+}
+
+#biography ul li {
+  display: inline-block;
+}
+
+#biography ul li img {
+  margin: 10px;
+}
+
+#biography figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.languages {
+  font-size: 14px;
+  font-style: italic;
+}
+
+form {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-family: "Comfortaa";
+  background-color: transparent;
+  min-width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, .2);
+  color: white;
+}
+
+input::placeholder {
+  color: rgb(224, 224, 224);
+
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+  border-bottom: 1px solid white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  outline: 0;
+  border-bottom: 1px solid white;
+}
+
+textarea{
+  font-family: "Comfortaa";
+  background-color: transparent;
+  min-width: 60%;
+  max-width: 80%;
+  height: 100px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, .2);
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  border: none;
+  color: rgb(160, 160, 160);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+  color: rgb(128, 128, 128);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  padding-left: 5px;
+}
+
+.footerIcon {
+  width: 32px;
+}
+
+/* Identify elements */
+/*
+*:hover {
+  box-shadow: 0 0 1px rgb(0, 0, 224);
 }
