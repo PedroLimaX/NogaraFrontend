@@ -38,6 +38,20 @@ h3 {
   color: rgb(224, 224, 224);
   text-align: center;
 }
+#buapText{
+  color: rgb(0, 181, 226);
+  font-weight: bold;
+}
+
+#cbtisText{
+  color: #9D2449;
+  font-weight: bold;
+}
+
+#nogaraText{
+  color: #269E7D;
+  font-weight: bold;
+}
 
 /* Navegation Bar */
 nav ul {
