@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
   background-color: rgb(1, 1, 1);
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
 /* Scroll */
@@ -27,11 +28,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(192, 192, 192);
 }
+/* ends scroll */
 
+/* header */
 h1 {
   text-shadow: 0 0 15px rgb(0, 0, 255);
 }
+/* ends header */
 
+/* general */
 h1,
 h2,
 h3 {
@@ -54,7 +59,7 @@ h3 {
 }
 
 /* Navegation Bar */
-nav ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -62,15 +67,15 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
+ul li {
   display: inline-block;
 }
 
-nav ul li:hover {
+ul li:hover {
   box-shadow: 0 0 2px rgb(0, 0, 224);
 }
 
-nav ul li a {
+ul li a {
   display: block;
   margin: auto;
   color: rgb(160, 160, 160);
@@ -79,38 +84,15 @@ nav ul li a {
   font-size: 20px;
 }
 
-nav ul li a:hover {
+ul li a:hover {
   color: white;
 }
+/* ends Navbar */
+/* ends General */
+
 
 /* Content Menu */
-#content ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-}
 
-#content ul li {
-  display: inline-block;
-}
-
-#content ul li:hover {
-  box-shadow: 0 0 2px rgb(0, 0, 224);
-}
-
-#content ul li a {
-  display: block;
-  margin: auto;
-  color: rgb(160, 160, 160);
-  padding: 10px;
-  text-decoration: none;
-}
-
-#content ul li a:hover {
-  color: white
-}
 
 main figure img {
   display: block;
@@ -120,6 +102,7 @@ main figure img {
   width: 50%;
   border-radius: 10px;
 }
+/* ends content menu */
 
 /* Main Picture */
 #avatarPic {
@@ -129,16 +112,17 @@ main figure img {
   width: 300px;
   border-radius: 50%;
 }
+/* ends main picture */
 
 /* Containers */
 header,
 main,
-section,
-footer {
+section {
   color: rgb(192, 192, 192);
   text-decoration: none;
   padding: 20px;
 }
+/* ends containers */
 
 /* Biography Section */
 #biography ul {
@@ -165,7 +149,8 @@ footer {
   font-size: 14px;
   font-style: italic;
 }
-
+/* ends biography section */
+/* contact */
 form {
   display: block;
   text-align: center;
@@ -176,7 +161,7 @@ form {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  font-family: "Comfortaa";
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   min-width: 250px;
   height: 40px;
@@ -204,7 +189,7 @@ input[type="tel"]:focus {
 }
 
 textarea{
-  font-family: "Comfortaa";
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   min-width: 60%;
   max-width: 80%;
@@ -216,7 +201,7 @@ textarea{
 
 input[type="submit"] {
   background-color: transparent;
-  border: none;
+  border: 1px solid rgb(1, 1, 1);
   color: rgb(160, 160, 160);
   padding: 10px;
   text-decoration: none;
@@ -228,12 +213,16 @@ input[type="submit"]:hover {
   border: 1px solid white;
   border-radius: 5px;
 }
+/* ends content */
 
 /* Footer Section */
 footer {
-  color: rgb(128, 128, 128);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  margin-bottom: 0;
+  color: rgb(128, 128, 128);
 }
 
 footer ul {
