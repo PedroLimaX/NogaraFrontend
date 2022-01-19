@@ -3,7 +3,9 @@ body{
 }
 
 div{
+  width: 200px;
   height: 30px;
+  float: left;
 }
 
 #color1{
