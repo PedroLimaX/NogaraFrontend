@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: rgb(1, 1, 1);
   font-family: 'Poppins', sans-serif;
   height: 100%;
@@ -59,7 +61,7 @@ h3 {
 }
 
 /* Navegation Bar */
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -67,15 +69,15 @@ ul {
   text-align: center;
 }
 
-ul li {
+nav ul li {
   display: inline-block;
 }
 
-ul li:hover {
+nav ul li:hover {
   box-shadow: 0 0 2px rgb(0, 0, 224);
 }
 
-ul li a {
+nav ul li a {
   display: block;
   margin: auto;
   color: rgb(160, 160, 160);
@@ -84,27 +86,58 @@ ul li a {
   font-size: 20px;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   color: white;
 }
-/* ends Navbar */
+
+
+/* ends content */
 /* ends General */
 
 
 /* Content Menu */
+#content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
 
+#content ul li {
+  display: inline-block;
+}
+
+#content ul li:hover {
+  box-shadow: 0 0 2px rgb(0, 0, 224);
+}
+
+#content ul li a {
+  display: block;
+  margin: auto;
+  color: rgb(160, 160, 160);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#content ul li a:hover {
+  color: white;
+}
+
+/* ends content menu */
+
+/* Main Picture */
 
 main figure img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 300px;
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
   border-radius: 10px;
 }
-/* ends content menu */
 
-/* Main Picture */
 #avatarPic {
   display: block;
   margin-left: auto;
@@ -121,6 +154,7 @@ section {
   color: rgb(192, 192, 192);
   text-decoration: none;
   padding: 20px;
+  text-align: justify;
 }
 /* ends containers */
 
