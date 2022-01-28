@@ -1,0 +1,53 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+/*Funciona para resetear valores por defecto*/
+
+h1,p{
+  box-sizing: border-box;
+  background-color:lightskyblue;
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+  display: inline-block;
+}
+
+nav{
+  background-color: rgb(0, 165, 102);
+  text-align: center;
+
+}
+nav ul li{
+  /* display: inline-block; */
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /*alineacion horizontal*/
+  align-items: center; /*alineacion vertical*/
+  flex-flow: row wrap; /*flex direction y wrap juntos*/
+  list-style: none;
+}
+li{
+  margin: 0 1rem;;
+}
+nav ul li a{
+  display: inline-block;
+  color: rgb(255, 255, 255); 
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: rgb(49, 190, 136);
+  border-radius: 10px 10px 0 0;
+}
+
