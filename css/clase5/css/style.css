@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+main{
+  background-color: lightgreen;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; /*Centrado horizontal*/
+  align-items: center; /*Centrado verticals*/
+  align-content: center; /*Centrar espacio entre columnas/filas*/
+}
+
+div{
+  width: 30%;
+  background-color: lightblue;
+  font-size: 1.2rem;
+  border: 3px dotted green;
+  /*flex properties*/
+
+}
+
+p{
+  background-color: lightcoral;
+}
