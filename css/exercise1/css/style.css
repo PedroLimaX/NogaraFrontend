@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+  border-radius: 15px;
+  font-family: 'Outfit', sans-serif;
+
+}
+
+body{
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: .5rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1.5rem;
+  width: 360px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 0 10px 10px rgb(10, 19, 32);
+}
+
+.main-pic{
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.title{
+  margin: 1rem 0;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  font-weight: 500;
+}
+.description{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 18px;
+}
+.price-date{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.price{
+  display: flex;
+  flex-wrap: wrap;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+.price img{
+  padding-right: .5rem;
+}
+.date{
+  display: flex;
+  flex-wrap: wrap;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+.date img{
+  padding-right: .5rem;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+}
+.avatar-pic{
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 35px;
+}
+.separator{
+  height: 2.5px;
+  background-color: hsl(215, 32%, 27%);
+}
+.author{
+  margin-top: 1.5rem;
+}
+.created{
+  padding-left: 1rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+.name{
+  color: white;
+  font-weight: 400;
+}
