@@ -1,0 +1,109 @@
+:root{
+  --main-color: rgb(144, 255, 116);
+  --padding-general: 2rem;
+  --font-paragraph-size: Helvetica;
+  --font-title-color: rgb(200,200,200);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+section{
+  padding: 1rem;
+  /* background-image: url('../img/avatar.png'); */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+p{
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+p:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
+a{
+  text-decoration: none;
+  color: aqua;
+}
+
+a:hover{
+  border: 1px solid aqua;
+  color: white;
+}
+
+section:first-child,
+section:first-of-type{
+  color: red;
+}
+section:last-child,
+section:last-of-type{
+  color: azure;
+}
+
+
+section p:nth-child(3n+0){ /*seleccionar un p en la posicion 6*/
+  background-color: burlywood;
+}
+section p:nth-child(3n+1){
+  background-color: darkslategrey;
+}
+
+table{
+  margin: 1rem;
+}
+
+table, td{
+  background-color: lightsalmon;
+}
+
+tr:first-child{
+  background-color: coral;
+  font-weight: bold;
+}
+
+tr:nth-child(2n+0){
+  background-color: aqua;
+}
+
+
+span::before{
+  content:url('../img/avatar.png');
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+span::after{
+  content: 'dfda';
+}
+
+p::first-line{
+  background-color: blue;
+}
+P::first-letter{
+  font-size: 2rem;
+  color: yellow;
+}
+
+li::marker{
+  color: lightgreen;
+  font-size: 2rem;
+}
+
+p::selection{
+  background-color: darkorchid;
+}
+
+span{
+  color: var(--main-color);
+}

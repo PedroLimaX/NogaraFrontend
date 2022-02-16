@@ -1,0 +1,56 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+} */
+ul{
+  background-color: lightcoral;
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url('../img/favicon.ico');
+}
+li{
+  background-color: lightgreen;
+}
+table,td{
+  border: 2px solid lightseagreen;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+td:hover{
+  cursor: pointer;
+  background-color:yellowgreen;
+}
+
+
+a{
+  text-decoration: none;
+  color: palevioletred;
+}
+
+a:link{
+  color:crimson;
+}
+a:visited{
+  color: darkslategray;
+}
+
+a:hover{
+  background-color: palevioletred;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+a:active{
+  color: yellow;
+  font-weight: bold;
+}
+a:focus-visible{
+  background-color: aquamarine;
+}
+
+a:active, a:hover, a:focus{
+  background-color: black;
+}
