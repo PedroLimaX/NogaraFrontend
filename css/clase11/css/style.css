@@ -1,0 +1,76 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: darkslategrey;
+  padding: 3rem;
+}
+main div h1 {
+  background-color: lightblue;
+  color: rgba(0, 182, 15, 0.75);
+  padding: 1rem;
+  text-align: center;
+  transition: 3s ease;
+}
+main div h1:hover {
+  background-color: lightpink;
+  transform: scale(90%);
+}
+main div section .img {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+main div section .img img {
+  width: 60%;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid wheat;
+  transition: 0.5s ease;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+main div section .img img:hover {
+  border-radius: 10px;
+  border: none;
+}
+main div section .info p {
+  font-size: 2rem;
+}
+main .cards {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: lightgreen;
+}
+main .cards div {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 2px dotted rosybrown;
+}
+main .cards div.card {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px dashed darkslategray;
+}
+main .cards div.card:first-child {
+  background-color: lightyellow;
+}
+
+/*# sourceMappingURL=style.css.map */
