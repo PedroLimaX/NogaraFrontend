@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+div{
+  background-color: moccasin;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+div span{
+  color: darkcyan;
+  font-size: 1.5rem;
+  /* transition: 1s; */
+  /*transition-delay: .1s; /*tiempo antes de empezar
+  transition-duration: 1s; /*duracion de la animacion
+  transition-timing-function: ease; /*estilo de la animacion*/
+  transition: 0.5s ease;
+}
+
+div .span2{
+  display: block;
+  color: darkcyan;
+  font-size: 1.5rem;
+  transition: 1s ease;
+  background-color: lightsalmon;
+  transform: translateX(calc(100% - 1rem));
+  transform: translate(10px, 20px); /*elementos 2d*/
+  transform: translate3d(10px 10px 10px); /*elementos 3d */
+}
+div .rotate{
+  display: block;
+  color: darkcyan;
+  font-size: 1.5rem;
+  transition: 1s ease;
+  background-color: lightgreen;
+  transform: rotateX(45deg);
+  transform: rotateY(45deg);
+  transform: rotateZ(1deg);
+  transform: rotate(2deg);
+  transform: rotate3d(1, 1, 1, 30deg);
+}
+
+div .scale{
+  display: block;
+  color: darkcyan;
+  font-size: 1.5rem;
+  transition: 1s ease;
+  background-color: lightblue;
+  transform: scaleX(.5);
+  transform: scaleY(.5);
+  transform: scaleZ(.5);
+  transform: scale3d(.5, .5, .5);
+}
+
+div .skew{
+  display: block;
+  color: darkcyan;
+  font-size: 1.5rem;
+  transition: 1s ease;
+  background-color: lightblue;
+  transform: skewX(15deg);
+  transform: SkewY(15deg);
+}
+
+div .matrix{
+  display: block;
+  color: darkcyan;
+  font-size: 1.5rem;
+  transition: 1s ease;
+  background-color: lightpink;
+  transform: matrix(0, 0, 0, 0, 10px, 10px);
+}
+
+div span:hover{
+  color: darkred;
+  cursor:pointer;
+  padding: 1rem;
+  transform: translate(100px);
+}
+
+
+.animaciones{
+  background-color: lightyellow;
+}
+.emoji{
+  text-align: center;
+  font-size: 3rem;
+  animation-name: fondoColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: fondoColor 3s ease infinite alternate;
+  animation-play-state: paused;
+}
+
+@keyframes fondoColor {
+  from {
+    background-color: lightcoral;
+  }
+  to{
+    background-color: rgb(205, 135, 222);
+  }
+  0% {
+    background-color: lightcoral;
+    transform: translate(-100%);
+
+  }
+  50%{
+    background-color: rgb(205, 135, 222);
+    font-size: 5rem;
+  }
+  100%{
+    font-size: 3rem;
+    transform: translate(100%);
+  }
+}

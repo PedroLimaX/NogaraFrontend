@@ -62,7 +62,7 @@ section:last-of-type div.item4{
   grid-area: right;
 }
 section:last-of-type div.item5{
-  grid-area: footer;
+  grid-area:footer;
 }
 
 section:last-of-type div{
