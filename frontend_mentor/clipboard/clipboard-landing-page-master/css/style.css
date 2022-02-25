@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  font-family: "Bai Jamjuree";
+  font-weight: 400;
+}
+
+.title {
+  font-size: 30px;
+  color: #4c545d;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #4c545d;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description-txt {
+  font-size: 18px;
+  color: #9fabb2;
+  margin: 2rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 30px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-ios-download {
+  background-color: #26baa4;
+  box-shadow: 0 2px 2px 2px rgba(38, 186, 164, 0.5);
+}
+
+.btn-android-download {
+  background-color: #6173ff;
+  box-shadow: 0 2px 2px 2px rgba(97, 115, 255, 0.5);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main img {
+  margin: auto;
+  margin-top: 3rem;
+  min-width: 150px;
+  width: 200px;
+}
+main .fst-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+main .scd-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+main .scd-section .image-computer {
+  display: flex;
+  justify-content: center;
+}
+main .scd-section .image-computer img {
+  width: 100%;
+  margin: 2rem 0;
+}
+main .scd-section .subtitle {
+  margin-top: 3rem 0;
+}
+main .trd-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+main .trd-section .image-devices {
+  display: flex;
+  justify-content: center;
+}
+main .trd-section .image-devices img {
+  width: 100%;
+  margin: 2rem 0;
+}
+main .trd-section .icon {
+  margin: auto;
+  padding: 2rem 9rem;
+  width: 100%;
+}
+main .trd-section .corps {
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin-top: 5rem;
+}
+footer .footer-logo {
+  margin: auto;
+  padding: 1rem;
+  min-width: 50px;
+  width: 120px;
+}
+footer .more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .more-info a {
+  color: #4c545d;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+footer .social-nets {
+  display: flex;
+  margin: 1.5rem;
+}
+footer .social-nets a {
+  margin: 1rem;
+}
+footer .attribution {
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .btn {
+    max-width: 300px;
+    padding: 0 3rem;
+  }
+
+  .btns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .fst-section, .frt-section {
+    margin: auto;
+    width: 50%;
+  }
+
+  .computer-container {
+    display: flex;
+    margin-top: 4rem;
+  }
+  .computer-container .image-computer {
+    margin-left: -3rem;
+  }
+  .computer-container .computer-description {
+    width: 40%;
+  }
+  .computer-container .computer-description .subtitle, .computer-container .computer-description .description-txt {
+    margin-left: 5rem;
+    text-align: start;
+  }
+
+  .trd-section {
+    margin: auto;
+    width: 70%;
+    align-items: center;
+  }
+  .trd-section .features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .trd-section .corps-container {
+    display: flex;
+    margin: 3rem 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .more-info {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
