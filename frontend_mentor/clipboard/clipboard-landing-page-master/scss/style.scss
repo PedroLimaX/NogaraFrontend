@@ -93,6 +93,12 @@ footer {
 
     a {
       margin: 0 1rem;
+      svg{
+        fill:#4C545C;
+      }
+      svg:hover {
+        fill: $primary-color;
+      }
     }
   }
 }
@@ -101,6 +107,10 @@ footer {
 @media only screen and (min-width: 375px) {
   body {
     background-image: url('../images/bg-header-desktop.png');
+  }
+  .btns-container {
+    max-width: 50%;
+
   }
 }
 
@@ -116,6 +126,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .section {
     max-width: 1440px;
     display: flex;
@@ -202,8 +213,4 @@ footer {
       }
     }
   }
-}
-
-@media screen and (min-width: 1440px) {
-  
 }

@@ -8,6 +8,11 @@ a{
   font-family: 'Bai Jamjuree';
   color: #fff;
 }
+.more-info a:hover{
+  color: $primary-color;
+}
+
+
 
 .section{
   display: flex;
@@ -53,8 +58,16 @@ a{
   background-color: $primary-color;
   
 }
+.primary-btn:hover{
+  background-color: hsl(171, 56%, 54%);
+  cursor: pointer;
+}
+
 .secondary-btn{
   background-color: $secondary-color;
+}
+.secondary-btn:hover{
+  background-color: hsl(233, 90%, 79%);
 }
 .feature{
   margin: 2rem 0;

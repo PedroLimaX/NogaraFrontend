@@ -5,6 +5,10 @@ a {
   color: #fff;
 }
 
+.more-info a:hover {
+  color: #26baa4;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -51,8 +55,17 @@ a {
   background-color: #26baa4;
 }
 
+.primary-btn:hover {
+  background-color: #48cbb8;
+  cursor: pointer;
+}
+
 .secondary-btn {
   background-color: #6173ff;
+}
+
+.secondary-btn:hover {
+  background-color: #99a5fa;
 }
 
 .feature {
@@ -135,10 +148,20 @@ footer .social-nets {
 footer .social-nets a {
   margin: 0 1rem;
 }
+footer .social-nets a svg {
+  fill: #4C545C;
+}
+footer .social-nets a svg:hover {
+  fill: #26baa4;
+}
 
 @media only screen and (min-width: 375px) {
   body {
     background-image: url("../images/bg-header-desktop.png");
+  }
+
+  .btns-container {
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
