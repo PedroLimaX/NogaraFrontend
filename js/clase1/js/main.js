@@ -1,4 +1,4 @@
-var edad = 20;
+/*var edad = 20;
 
 var nombre;
 
@@ -85,4 +85,4 @@ if (mayoriaEdad >18) {
 }
 if(mayoriaEdad==18){
   console.log('Ya puedes entrar al bar');
-}
+}*/
