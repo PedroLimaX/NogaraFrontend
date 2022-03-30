@@ -81,3 +81,18 @@ for (var index = 0; index < array.length; index++) {
 console.log('ordenado',array);
 
 */
+var lista = [1,8,4,7,3,6,5,2,0];
+    var n, index, k, auxiliar;
+    n = lista.length;
+    console.log(lista); 
+    for (k = 1; k < n; k++) {
+        for (index = 0; index < (n - k); index++) {
+            if (lista[index] > lista[index + 1]) {
+                auxiliar = lista[index];
+                lista[index] = lista[index + 1];
+                lista[index + 1] = auxiliar;
+            }
+        }
+    }
+
+    console.log(lista); 
