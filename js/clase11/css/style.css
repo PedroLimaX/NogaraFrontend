@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+.btn{
+  margin: auto;
+  width: 40%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background-color:lightseagreen;
+  color: #fff;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+section{
+  display: flex;
+  justify-content: space-around;
+}
+section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 200px;
+  border: 3px solid black
+}
+
+img{
+  width: 80%;
+}
+
+#img1{
+  background-color:cornflowerblue;
+}
+#img2{
+  background-color:lightcoral;
+}
+
+.hotspot:first-child{
+  background-color: lightcoral;
+}
+
+.hotspot:last-child{
+  background-color: cornflowerblue;
+}

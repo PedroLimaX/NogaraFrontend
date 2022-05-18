@@ -1,0 +1,19 @@
+body{
+  padding:1rem;
+  font-family: helvetica;
+}
+div.btnClick{
+  text-align: center;
+  border: 1px solid hsl(0, 79%, 72%);
+  padding: 1rem 2rem;
+  color: hsl(0, 79%, 72%);
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 0 hsla(0, 79%, 72%, 0.5);
+}
+
+div.btnClick:hover{
+  color: #fff;
+  background-color: hsl(0, 79%, 72%);
+  box-shadow: 0 0 3px 3px hsla(0, 79%, 72%, 0.5);
+}

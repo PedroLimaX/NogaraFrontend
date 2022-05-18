@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Clase 11</title>
+</head>
+<body oncontextmenu="clickDerecho(event)">
+
+  <main>
+    <div class="btn" onclick="clickEv(event)" ondblclick="dobleClick(event)" oncontextmenu="clickDerecho(event)"><span>Click</span></div>
+    <div class="btn" onclick="clickEv(event)" ondblclick="dobleClick(event)" oncontextmenu="clickDerecho(event)"><span>Click</span></div>
+    <div class="btn" onclick="clickEv(event)" ondblclick="dobleClick(event)" oncontextmenu="clickDerecho(event)"><span>Click</span></div>
+  </main>
+
+
+  <section >
+    <div data-target="img2" class="hotspot" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+
+    <div><img id="img1"draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd()" src="img/tv.png" alt=""></div>
+    <div><img id="img2"draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd()" src="img/tv.png" alt=""></div>
+    
+    <div data-target="img1" class="hotspot" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

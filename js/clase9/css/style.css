@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form input{
+  margin: .5rem;
+}
+
+#send{
+  color: lightseagreen;
+  border: 1px solid lightseagreen;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+#send:hover{
+  cursor: pointer;
+  background-color: lightseagreen;
+  color: #FFF;
+}
