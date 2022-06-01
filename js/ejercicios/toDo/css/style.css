@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primary-color: hsl(217, 89%, 61%);
+  --success-color: hsl(144, 100%, 39%);
+  --warning-color: hsl(40, 100%, 60%);
+  --danger-color: hsl(0, 100%, 63%);
+  --disabled-color: rgb(140, 140, 140);
+  --info-color: hsl(174, 63%, 45%);
+  --text-color: hsl(0, 0%, 13%);
+  --bg-color: hsl(0, 0%, 98%);
+  --line-borders: hsla(0, 0%, 0%, 0.2);
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+h1{
+  text-align: center;
+  margin: 1rem;
+  color:var(--text-color);
+}
+
+.taskInfo{
+  margin: 1rem;
+  width: 30%;
+  border: .5px solid var(--line-borders);
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: 1px solid var(--line-borders);
+}
+
+input, textarea{
+  min-width: 200px;
+  width: 80%;
+  margin: auto;
+  height: 30px;
+  border: none;
+  border-bottom: .5px solid var(--line-borders);
+}
+input:focus, textarea:focus{
+  outline: none;
+  border-bottom: 1.5px solid var(--line-borders);
+}
+
+.save-btn{
+  background-color: var(--bg-color);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+  padding: .2rem .5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.save-btn:hover{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+
+.task-btns, .status-btns{
+  display: flex;
+  justify-content: center;
+}
+
+.status-indicator{
+  margin-left: auto;
+  margin-right: .5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--disabled-color);
+}
+
+.task-btns div, .status-btns div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+
+.status-btns div:hover{
+  cursor: pointer;
+}
+
+
+.title-txt{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+.description-txt, .status-txt{
+  font-size: 0.8rem;
+}
+
+
+.date-txt{
+  font-size: .7rem;
+  font-style: italic;
+  color: var(--disabled-color);
+}
+
+
+.edit-btn{
+  border: .5px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.delete-btn{
+  border: .5px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.toDo-btn{
+  border: .5px solid var(--disabled-color);
+  color: var(--disabled-color);
+}
+
+.workingOn-btn{
+  border: .5px solid var(--info-color);
+  color: var(--info-color);
+}
+
+.Done-btn{
+  border: .5px solid var(--success-color);
+  color: var(--success-color);
+}
+
+
+
+.edit-btn:hover{
+  background-color: var(--warning-color);
+  color: var(--bg-color);
+}
+
+.delete-btn:hover{
+  background-color: var(--danger-color);
+  color: var(--bg-color);
+}
+
+.toDo-btn:hover{
+  background-color: var(--disabled-color);
+  color: var(--bg-color);
+}
+
+.workingOn-btn:hover{
+  background-color: var(--info-color);
+  color: var(--bg-color);
+}
+
+.Done-btn:hover{
+  background-color: var(--success-color);
+  color: var(--bg-color);
+}

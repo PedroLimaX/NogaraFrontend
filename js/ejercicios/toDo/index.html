@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>To Do</title>
+</head>
+<body>
+  <main>
+    <h1>To Do List</h1>
+    <form action="">
+      <label for="task">Tarea:</label>
+      <input type="text" name="taskTitle" id="taskTitle">
+      <br><br>
+      <label for="taskDecription">Detalles: </label>
+      <textarea name="taskDescription" id="taskDescription" cols="20" rows="5"></textarea>
+      <div class="save-btn btn" onclick="getTask()"><i class='bx bx-save' ></i></div>
+    </form>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
