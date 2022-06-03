@@ -2,11 +2,17 @@
 
 :root{
   --primary-color: hsl(217, 89%, 61%);
+  --bg-primary-color: hsla(217, 89%, 61%,0.1);
   --success-color: hsl(144, 100%, 39%);
+  --bg-success-color: hsla(144, 100%, 39%,0.1);
   --warning-color: hsl(40, 100%, 60%);
+  --bg-warning-color: hsla(40, 100%, 60%,0.1);
   --danger-color: hsl(0, 100%, 63%);
+  --bg-danger-color: hsla(0, 100%, 63%,0.1);
   --disabled-color: rgb(140, 140, 140);
+  --bg-disabled-color: rgba(140, 140, 140,0.1);
   --info-color: hsl(174, 63%, 45%);
+  --bg-info-color: hsla(174, 63%, 45%,0.1);
   --text-color: hsl(0, 0%, 13%);
   --bg-color: hsl(0, 0%, 98%);
   --line-borders: hsla(0, 0%, 0%, 0.2);
@@ -27,11 +33,17 @@ h1{
 }
 
 .taskInfo{
-  margin: 1rem;
-  width: 30%;
-  border: .5px solid var(--line-borders);
+  margin: auto;
+  margin-top: 1rem;
+  width: 70%;
+  border: .5px solid var(--bg-color);
   padding: .5rem;
   border-radius: 5px;
+  background-color: var(--bg-disabled-color);
+}
+.taskInfo:hover{
+  transition: all .1s ease-in-out;
+  transform: scale(1.005);
 }
 
 form{
@@ -51,6 +63,8 @@ input, textarea{
   height: 30px;
   border: none;
   border-bottom: .5px solid var(--line-borders);
+  background-color: transparent;
+  font-size: 1.1rem;
 }
 input:focus, textarea:focus{
   outline: none;
@@ -109,6 +123,9 @@ input:focus, textarea:focus{
   font-size: 1.2rem;
 }
 
+.status-btns div{
+  border-radius: 50%;
+}
 
 .status-btns div:hover{
   cursor: pointer;
@@ -116,18 +133,23 @@ input:focus, textarea:focus{
 
 
 .title-txt{
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: auto;
 }
 
 .description-txt, .status-txt{
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.status-txt{
+  color: var(--disabled-color);
+  font-weight: bold;
 }
 
 
 .date-txt{
-  font-size: .7rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--disabled-color);
 }

@@ -98,6 +98,7 @@ function Animal(coins, tipo,color, name){
   }
 
   this.getCoins = () =>this.coins;
+  // console.log(getCoins);
 
   this.setCoins = (val) => this.coins = val;
 
