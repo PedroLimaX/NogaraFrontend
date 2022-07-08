@@ -87,7 +87,7 @@ var tiktokers = [
       info: 'Alias: Ingesaurio. Habilidad especial: Dañar libros de ingeniería y dar consejos de ingenieria. En cada ronda aumenta 500ATK.',
       atk: 4000,
       def: 4000,
-      img: 'IMG-20211005-WA0042.jpg'
+      img: 'IMG-20211005-WA0047.jpg'
   },
   {
       name: 'stefan castillo',
@@ -96,7 +96,7 @@ var tiktokers = [
       info: 'Hbailidad para las artes oscuras del CSS mágico. Habilidad especial: Logos con CSS. Debilidad: Usar JavaScript le quita 100 ATK',
       atk: 2200,
       def: 2000,
-      img: 'IMG-20211005-WA0044.jpg'
+      img: 'IMG-20211005-WA0052.jpg'
   },
   {
       name: "Maeva Mazadiego",
@@ -105,7 +105,7 @@ var tiktokers = [
       info: "Alias Mae, habilidad seriedad absoluta divina, cuando se encuentra en el juego Chica Python Maeva obtiene 1000 ATK",
       atk: 3200,
       def: 3000,
-      img: 'IMG-20211005-WA0047.jpg'
+      img: 'IMG-20211005-WA0053.jpg'
   },
   {
       name: 'jessica azcona',
@@ -114,7 +114,7 @@ var tiktokers = [
       info: 'Hablilidad magia antigua que es capaz de borrar cuentas de github, debilidad C, C++',
       atk: 1200,
       def: 900,
-      img: 'IMG-20211005-WA0052.jpg'
+      img: 'IMG-20211005-WA0065.jpg'
   },
   {
       name: 'david corteza',
@@ -123,7 +123,7 @@ var tiktokers = [
       info: 'Habilidad hacer carnitas asadas, habiliad especial titktok geniales de risa, debilidad el hermano de Kuriboh le resta la mitad de DEF y ATK',
       atk: 4000,
       def: 4000,
-      img: 'IMG-20211005-WA0053.jpg'
+      img: 'IMG-20211005-WA0066.jpg'
   },
   {
       name: 'Rodo Ferro',
@@ -132,7 +132,7 @@ var tiktokers = [
       info: 'Habilidad sobre humana para generación de monas chinas para atacar con su ejército, si en el campo de batalla se encuentra Carlita.py evangelizan el doble de rápido al mundo del IA, debilidad el hermano de Kuriboh',
       atk: 3000,
       def: 2500,
-      img: 'IMG-20211005-WA0065.jpg'
+      img: 'IMG-20211005-WA0068.jpg'
   },
   {
       name: 'joss pelcastre',
@@ -141,7 +141,7 @@ var tiktokers = [
       info: 'Habilidad divina de charla astral, especial hackear Facebook de tu ex, si se encuentra al hermano de Kuriboh se igualan sus ATK y DEF',
       atk: 1900,
       def: 1400,
-      img: 'IMG-20211005-WA0066.jpg'
+      img: 'IMG-20211005-WA0070.jpg'
   },
   {
       name: 'david portilla',
@@ -150,7 +150,7 @@ var tiktokers = [
       info: 'Alias el Frontend Mecatronico Habilidad especial jugar pokimon con el Rodo Ferro y sus monas chinas, si en el campo se encuentra a Pamsho.dev incrementa ambos su poder con esteroides a 2500 ATK y DEF',
       atk: 1900,
       def: 1900,
-      img: 'IMG-20211005-WA0068.jpg'
+      img: 'IMG-20211006-WA0021.jpg'
   },
   {
       name: 'MaybeMar',
@@ -159,30 +159,44 @@ var tiktokers = [
       info: 'MaybeMAr eres la mejor programadora del mundo 🙂 aparte estas demasiado hermosa, todo eso acampañado de una hermosa carita de angel',
       atk: 5000,
       def: 5000,
-      img: 'IMG-20211005-WA0070.jpg'
+      img: 'IMG-20211006-WA0023.jpg'
   },
 ];
 
 
-
-
-function stars(cardId){
-  for (let index = 0; index < cardId; index++) {
-    // console.log(tiktokers[indice].stars);
-    var element = document.createElement('div');
-    var container = document.getElementsByClassName('yellow')[0];
-    element.innerHTML = '<div class="stars"> <img class="star" src="img/star.png"></div>';
-    container.appendChild(element);
-  }
+function stars(id){
+        
+        for (let index = 0; index < tiktokers[id].stars; index++) {
+            var element = document.createElement('div');
+            var container = document.getElementsByClassName('stars')[id];
+            element.innerHTML = `<img class='star' src='img/star.png'>`;
+            container.appendChild(element);
+        }
 }
 
 function card(){
   for (let index = 0; index < tiktokers.length; index++) {
     var element = document.createElement('div');
     var container = document.getElementsByClassName('cards')[0];
-    element.innerHTML = '<div class="card"> <div class="yellow">' + tiktokers[index].name + '</div></div>';
-    stars(index);
+    element.innerHTML = 
+        `<div class='card'>
+            <div class='yellow'>
+                <div class='header'>${tiktokers[index].name}</div>
+                <div class='stars'></div>
+                <img class='img' style="background-image: url('img/cards/${tiktokers[index].img}'">
+                <div class='desc'>
+                    <div class='type'>[${tiktokers[index].type}]</div>
+                    <div class='info'>${tiktokers[index].info}</div>
+                    <div id='separator'><div>
+                    <div class='stats'>
+                        <span class='atk'>ATK/${tiktokers[index].atk}</span>
+                        <span class='def'>DEF/${tiktokers[index].def}</span>
+                    </div>
+                </div>
+            </div>
+        </div>`;
     container.appendChild(element);
+    stars(index);
   }
 }
 

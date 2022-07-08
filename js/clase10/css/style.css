@@ -2,45 +2,95 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: sans-serif;
 }
 
-body{
+
+.cards{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .card{
-  background-color: gray;
+  background: rgb(133,133,133);
+background: linear-gradient(45deg, rgba(133,133,133,1) 0%, rgba(218,218,218,1) 33%, rgba(158,158,158,1) 50%, rgba(195,195,195,1) 66%, rgba(157,157,157,1) 100%);
   width: 419px;
-  height: 650px;
-  padding: 1rem;
+  height: 700px;
+  padding: .5rem;
   margin: 1rem;
   text-align: center;
 }
 
 .card .yellow{
-  background-color: goldenrod;
+  background: rgb(255,183,0);
+background: linear-gradient(45deg, rgba(255,183,0,1) 0%, rgba(255,213,116,1) 33%, rgba(255,174,4,1) 50%, rgba(255,213,129,1) 66%, rgba(255,166,0,1) 100%);
   width: 100%;
   height: 100%;
-  padding-top: 6rem;
+  padding-top: 1rem;
+}
+.header{
+  font-size: 1.5rem;
+  color: rgb(90, 90, 90);
+  margin: 1rem ;
+  padding: .5rem;
+  box-shadow: 2px 2px 3px 5px rgba(0, 0, 0, .5);
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .card .img{
   border: 5px solid gray;
   margin: auto;
-  width: 84%;
-  height: 313px;
-  background-image: url(../img/cards/IMG-20211005-WA0001.jpg);
-  background-position: 362px -114px;
+  width: 80%;
+  height: 320px;
+  background-position: 365px -115px;
+}
+.card .desc{
+  margin: .5rem;
+  background-color:rgba(255, 248, 220,.5);
+  border: 4px solid rgb(184, 106, 37);
 }
 
-.stars{
-  display: flex;
-  flex-direction: row;
+.type{
+  font-size: 1.1rem;
+  text-align: start;
+  font-weight: bold;
+  margin: .5rem;
 }
+.info{
+  font-style: italic;
+  color: rgb(64, 64, 64);
+  text-align: justify;
+  margin: .5rem;
+}
+
+#separator{
+  background-color: black;
+  width: 90%;
+  height: 2px;
+  margin: 2rem auto 2rem;
+}
+
+.stats{
+  text-align: end;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+
+.stars, .stars div{
+  display: flex;
+  justify-content: flex-end;
+}
+.stars{
+  margin: 1rem 2rem;
+}
+
 
 .star{
-  width: 20px;
+  width: 25px;
+  margin: .1rem ;
 }
 
 /* input{

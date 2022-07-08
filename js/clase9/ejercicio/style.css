@@ -9,7 +9,7 @@
 .main{
   background-color: rgb(47, 47, 47);
   padding: 1rem;
-  width: 80%;
+  width: 30%;
   margin: 1rem auto;
 }
 
@@ -24,11 +24,15 @@
   font-family: Verdana;
   overflow: hidden;
 }
+.screen{
+  margin: 3rem auto;
+}
 
 .main .nums{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2rem auto;
 }
 
 .main .nums .key{
@@ -47,4 +51,8 @@
 .main .nums .key:hover{
   background-color: rgb(69, 69, 69);
   cursor: pointer;
+}
+.log{
+  margin: 1rem;
+  text-align: end;
 }
